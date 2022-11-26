@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="PARABANK Test Application Automation Test Suite" verbose="1" >
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+  <test name="Parabank Web Test Cases" >
+    <classes>
+       <class name="com.parabank.qa.testcases.LoginPageTest" />
+       <class name="com.parabank.qa.testcases.HomePageTest" />
+       <class name="com.parabank.qa.testcases.RequestLoanPageTest" />
+    </classes>
+  </test>
+</suite>
